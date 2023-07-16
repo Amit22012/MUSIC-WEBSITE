@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cb1d548905.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="alan.css">
+    <title>MUSIQAL</title>
+    <style>
+        .menu_side{
+            margin-top: -10px;
+        }
+        .menu_side li{
+            list-style-type: none;
+             width: 80%;
+             height: 100px;
+             margin-bottom: 20px;
+        }
+        .song_side .songs{
+            display: flex;
+            flex-direction: column;
+        }
+        .song_side .songs .SongItem{
+            display: flex;
+            justify-content:space-between;
+            margin: 15px 15px 15px 15px;
+            width: 90%;
+            height: 80px;
+            align-items: center;
+        }
+        
+        .menu_side .img_play img{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .menu_side .all_artist{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+            gap: 40px;
+        }
+        .menu_side .all_artist .Item{
+            display: flex;
+            gap: 20px;
+            justify-content:left;
+            align-items: center;
+        }
+        .menu_side .artist{
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            margin-left: 50px;
+        }
+        tr:hover{
+            border: 1px solid #ffffff56;
+            border-radius: 10px;    
+        }
+        tr .number{
+            width:5%;
+        }
+        tr .pic{
+            width:10%;
+        }
+        tr .music_song{
+            width: 12%;
+        }
+        tr .singer{
+            width: 10%;
+        }
+        tr .album{
+            width: 12%;
+        }
+        tr .duration{
+            width: 8%;
+        }
+        tr .sign{
+            width: 5%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <!-- navigation bar -->
+        <nav class="navigation-bar">
+            <div class="page">
+                <ul class="menu" style=" height: 100%;">
+                    <li style="width: 15%; height: 50%;"><a href="index.html">Discover</a></li>
+                    <li style="width: 25%; height: 50%;"><a href="#trendingsongs">Trending Songs</a></li>
+                    <li style="width: 15%; height: 50%;">
+                        <div class="dropdown" style="width: 100%;">
+                            <button>Artists<i class='fas fa-angle-down'></i></button>
+                            <div class="dropdown-content">
+                            <a href="justin.html">Justin Bieber</a>
+                            <a href="alanwalker.html">Alan Walker</a>
+                            <a href="ammy.html">Ammy Virik</a>
+                            <a href="arijit.html">Arijit Singh</a>
+                            <a href="gurnam.html">Gurnaam</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li style="width: 15%; height: 50%;">
+                        <div class="dropdown" style="width: 100%;">
+                            <button>Moods<i class='fas fa-angle-down'></i></button>
+                            <div class="dropdown-content">
+                            <a href="rain.html">Romantic</a>
+                            <a href="high.html">High</a>
+                            <a href="bass.html">Energetic</a>
+                            <a href="english.html">English</a>
+                            <a href="tracks.html">Tracks</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li class="search" style=" width: 30%;height: 37%;">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="search song...." name="" id="">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!-- menu side html -->
+        <div class="menu_side">
+            <div class="content">
+                <div ><img src="poster/picposter/img3.webp" alt="" style="border-radius:20px; box-shadow: 0px 0px 5px 0px ; width: 100%; height:100%;" ></div>
+                <h2 style="font-size: 30px;">World of Soundtracks<br><p style="font-size: 13px; color: rgba(159, 159, 159, 0.768);">By Musiqal Music</p></h2>
+                <div class="buttons" >
+                    <button id="playnowbtn" class="playbtn"><i class="fa-solid fa-play" style="margin-right: 5px; color: #fff;"></i>Play Now</button>
+                    <button id="flwbtn" class="flwbtn"><i class="fa-solid fa-plus" style="margin-right: 5px;"></i>Follow</button>
+                </div>
+                <div class="content1.1">
+                <h2 style="display: flex; justify-content: center; margin-top: 10px;">
+                    <!-- <p style="font-size: 12px; width: 90%;">Mankirt Aulakh is a fantastic and energetic Punjabi singer in Punjabi music industry. He was born at Fatehabad, Haryana, India. He was born on October 2. He released his all new song Gallan Mithiyan which got highly popular in youth and getting positive response from all over the world. Mankrit Aulakh Famous songs are- Jugaadi Jatt, Kaka ji, Disco-ch Bhangra, Tere Bina, Chamkila, Aqqi teri Maa, Gallan Mithiyaan.                </p> -->
+                </h2>
+                </div>
+            </div>
+            <div class="contentx1" style="display: flex; align-items: center;">
+                <div class="contentx2" style="width: 90%;">
+                <div class="artist" style=" display:flex;flex-wrap: wrap; align-items: center;" >
+                <div class="artistname" style="width: 100%; height: 12%; font-size: 30px; position:relative; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;"> Artists</div>
+                <div class="all_artist" style="width: 100%;">
+                    <li class="Item">
+                        <div class="img_play">
+                           <a href="alanwalker.html"> <img src="poster/playlistposter/alanwalker.jpg" alt=""></a>
+                        </div>
+                        <h5>Alan Walker</h5>
+                    </li>
+                    <li class="Item" >
+                        <div class="img_play">
+                            <a href="gurnam.html"><img src="poster/playlistposter/gurnam_bhullar.webp" alt=""></a>
+                        </div>
+                        <h5>Gurnaam Bhullar</h5>
+                    </li>
+                    <li class="Item" >
+                        <div class="img_play">
+                            <a href="arijit.html"><img src="poster/playlistposter/img3.webp" alt=""></a>
+                        </div>
+                        <h5>Arjit Singh</h5>
+                    </li>
+                    <li class="Item" >
+                        <div class="img_play">
+                            <a href="justin.html"><img src="poster/playlistposter/img4.webp" alt=""></a>
+                        </div>
+                        <h5>Justin Bieber</h5>
+                    </li>
+                    
+                    <li class="Item" >
+                        <div class="img_play">
+                            <a href="ammy.html"><img src="poster/playlistposter/img6.webp" alt=""></a>
+                        </div>
+                        <h5>Ammy Virik</h5>
+                    </li>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div style="margin-bottom: 150px;"></div>
+
+        </div>
+
+
+
+        <div class="song_side" style="display: block;">
+            <div class="songs" style="margin-top: 100px;">
+                <table style="width: 95%; margin-bottom: 0px;">
+                     <tr>
+                      <td class="number" ><h4 style="display: flex; justify-content:center; margin-left: 10px"> #</h4></td>
+                      <td class="pic" ><div style="display: flex; justify-content:center;">Track</div></td>
+                      <td class="music_song" ><h5></h5></td>
+                      <td class="singer"><nav style="display: flex; justify-content:center;margin-right: 50px;">Artist</nav></td>
+                      <td class="album"><p style="display: flex; justify-content:left;">Album</p></td>
+                      <td class="duration" ><p style="display: flex; justify-content:left; margin-right: 30px; ">Duration</p></td>
+                      <td class="sign"><i style="margin-right: 10px;"></i></td>
+                    </tr>
+                </table>
+                <table style="width:95%; height:900px;">
+                    <tr class="SongItem">
+                        <td class="number" ><h4 style="display: flex; justify-content:center; margin-left: 10px;">1</h4></td>
+                        <td class="pic"><div  style="display: flex; justify-content: center; align-items: center;"><img src="poster/img1.jpeg" alt="" style="width: 70px; height:70px; border-radius:12px; "></div></td>
+                        <td class="music_song"><h5 id="songname" style="display: flex; justify-content: left; overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;">Mera Yaar</h5></td>
+                        <td class="singer"><nav id="singer" style="display: flex; justify-content: center;">gurnaam bhullar</nav></td>
+                        <td class="album"><span id="album" style="display: flex; justify-content: left; overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;">lekh</span></td>
+                        <td class="duration" ><p id="dura" style="display: flex; justify-content: center;">3:30</p></td>
+                        <td class="sign"><i style="margin-right: 10px;" class="fa playlistplay fa-play" id="1"></i></td>
+                      </tr>
+                    
+                    <tr class="SongItem">
+                        <td class="number" ><h4 style="display: flex; justify-content:center; margin-left: 10px;">2</h4></td>
+                        <td class="pic"><div  style="display: flex; justify-content: center; align-items: center;"><img src="poster/img1.jpeg" alt="" style="width: 70px; height:70px; border-radius:12px; "></div></td>
+                        <td class="music_song"><h5 id="songname" style="display: flex; justify-content: left; overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;">Mera Yaar</h5></td>
+                        <td class="singer"><nav id="singer" style="display: flex; justify-content: center;">gurnaam bhullar</nav></td>
+                        <td class="album"><span id="album" style="display: flex; justify-content: left; overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;">lekh</span></td>
+                        <td class="duration" ><p id="dura" style="display: flex; justify-content: center;">3:30</p></td>
+                        <td class="sign"><i style="margin-right: 10px;" class="fa playlistplay fa-play" id="2"></i></td>
+                      </tr>
+                      <tr class="SongItem">
+                        <td class="number" ><h4 style="display: flex; justify-content:center; margin-left: 10px;">3</h4></td>
+                        <td class="pic"><div  style="display: flex; justify-content: center; align-items: center;"><img src="poster/img1.jpeg" alt="" style="width: 70px; height:70px; border-radius:12px; "></div></td>
+                        <td class="music_song"><h5 id="songname" style="display: flex; justify-content: left; overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;">Mera Yaar</h5></td>
+                        <td class="singer"><nav id="singer" style="display: flex; justify-content: center;">gurnaam bhullar</nav></td>
+                        <td class="album"><span id="album" style="display: flex; justify-content: left; overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;">lekh</span></td>
+                        <td class="duration" ><p id="dura" style="display: flex; justify-content: center;">3:30</p></td>
+                        <td class="sign"><i style="margin-right: 10px;" class="fa playlistplay fa-play" id="3"></i></td>
+                      </tr>
+                      <tr class="SongItem">
+                        <td class="number" ><h4 style="display: flex; justify-content:center; margin-left: 10px;">4</h4></td>
+                        <td class="pic"><div  style="display: flex; justify-content: center; align-items: center;"><img src="poster/img1.jpeg" alt="" style="width: 70px; height:70px; border-radius:12px; "></div></td>
+                        <td class="music_song"><h5 id="songname" style="display: flex; justify-content: left; overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;">Mera Yaar</h5></td>
+                        <td class="singer"><nav id="singer" style="display: flex; justify-content: center;">gurnaam bhullar</nav></td>
+                        <td class="album"><span id="album" style="display: flex; justify-content: left; overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;">lekh</span></td>
+                        <td class="duration" ><p id="dura" style="display: flex; justify-content: center;">3:30</p></td>
+                        <td class="sign"><i style="margin-right: 10px;" class="fa playlistplay fa-play" id="4"></i></td>
+                      </tr>
+                      <tr class="SongItem">
+                        <td class="number" ><h4 style="display: flex; justify-content:center; margin-left: 10px;">5</h4></td>
+                        <td class="pic"><div  style="display: flex; justify-content: center; align-items: center;"><img src="poster/img1.jpeg" alt="" style="width: 70px; height:70px; border-radius:12px; "></div></td>
+                        <td class="music_song"><h5 id="songname" style="display: flex; justify-content: left; overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;">Mera Yaar</h5></td>
+                        <td class="singer"><nav id="singer" style="display: flex; justify-content: center;">gurnaam bhullar</nav></td>
+                        <td class="album"><span id="album" style="display: flex; justify-content: left; overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;">lekh</span></td>
+                        <td class="duration" ><p id="dura" style="display: flex; justify-content: center;">3:30</p></td>
+                        <td class="sign"><i style="margin-right: 10px;" class="fa playlistplay fa-play" id="5"></i></td>
+                      </tr>
+                      <tr class="SongItem">
+                        <td class="number" ><h4 style="display: flex; justify-content:center; margin-left: 10px;">6</h4></td>
+                        <td class="pic"><div  style="display: flex; justify-content: center; align-items: center;"><img src="poster/img1.jpeg" alt="" style="width: 70px; height:70px; border-radius:12px; "></div></td>
+                        <td class="music_song"><h5 id="songname" style="display: flex; justify-content: left; overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;">Mera Yaar</h5></td>
+                        <td class="singer"><nav id="singer" style="display: flex; justify-content: center;">gurnaam bhullar</nav></td>
+                        <td class="album"><span id="album" style="display: flex; justify-content: left; overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;">lekh</span></td>
+                        <td class="duration" ><p id="dura" style="display: flex; justify-content: center;">3:30</p></td>
+                        <td class="sign"><i style="margin-right: 10px;" class="fa playlistplay fa-play" id="6"></i></td>
+                      </tr>
+                      <tr class="SongItem">
+                        <td class="number" ><h4 style="display: flex; justify-content:center; margin-left: 10px;">7</h4></td>
+                        <td class="pic"><div  style="display: flex; justify-content: center; align-items: center;"><img src="poster/img1.jpeg" alt="" style="width: 70px; height:70px; border-radius:12px; "></div></td>
+                        <td class="music_song"><h5 id="songname" style="display: flex; justify-content: left; overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;">Mera Yaar</h5></td>
+                        <td class="singer"><nav id="singer" style="display: flex; justify-content: center;">gurnaam bhullar</nav></td>
+                        <td class="album"><span id="album" style="display: flex; justify-content: left; overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;">lekh</span></td>
+                        <td class="duration" ><p id="dura" style="display: flex; justify-content: center;">3:30</p></td>
+                        <td class="sign"><i style="margin-right: 10px;" class="fa playlistplay fa-play" id="7"></i></td>
+                      </tr>
+                      <tr class="SongItem">
+                        <td class="number" ><h4 style="display: flex; justify-content:center; margin-left: 10px;">8</h4></td>
+                        <td class="pic"><div  style="display: flex; justify-content: center; align-items: center;"><img src="poster/img1.jpeg" alt="" style="width: 70px; height:70px; border-radius:12px; "></div></td>
+                        <td class="music_song"><h5 id="songname" style="display: flex; justify-content: left; overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;">Mera Yaar</h5></td>
+                        <td class="singer"><nav id="singer" style="display: flex; justify-content: center;">gurnaam bhullar</nav></td>
+                        <td class="album"><span id="album" style="display: flex; justify-content:left; overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;">lekh</span></td>
+                        <td class="duration" ><p id="dura" style="display: flex; justify-content: center;">3:30</p></td>
+                        <td class="sign"><i style="margin-right: 10px;" class="fa playlistplay fa-play" id="8"></i></td>
+                      </tr>
+                   
+                  </table>
+            </div>
+               
+        
+        
+        <!-- footer info -->
+        <div class="footer2">
+            <img src="music-logo-png-2356.png" alt="" style="height: 80%; width: 80px;margin: 10px 10px 10px 20px;">
+            <div class="text">
+                <h2 style="font-weight: 400;">Best way to Listen to Music!</h2>
+                <h3 style="font-weight: 400;">Don't forget to install Musiqal on your mobile phones</h3>
+            </div>
+        </div>
+        <div style="width: 100%; height: 100px;"></div>
+        
+
+
+        <!-- player side html -->
+        <div class="player">
+            <div class="player1">
+                <div class="player11" style="display: flex;">
+                    <span><img src="poster/img1.jpeg" alt="" id="playerposter"></span>
+                    <h5 id="footname">
+                            Mera Yaar
+                        <div class="subtitle">Gurnaam Bhullar</div>
+                    </h5>
+                </div>
+                <div class="player12" style="align-items: center;">
+                    <div class="shuffle">
+                        <i id="shuffle" class="fa fa-random" style="cursor: pointer; color: rgb(194, 193, 193); font-size: 20px;"></i>
+                    </div>
+                    <div class="player_icons" style="display: flex; align-items: center; gap: 20px;" >
+                        <i id="back" class="fa fa-step-backward" style="color: rgb(194, 193, 193); cursor: pointer; font-size: 20px;" ></i>
+                        <i id="playerbtn" class="fa fa-play" style="color: #fff; cursor: pointer;font-size: 20px;"></i>
+                        <i id="next" class="fa fa-step-forward" style="color: rgb(194, 193, 193);cursor: pointer; font-size: 20px;"></i>
+                    </div>
+                </div>
+                <div class="player13">
+                    <div class="time" style="font-size: 11px; display: flex; align-items: center;">
+                        <span class="start_time" id="start_time" style="transition-delay: 1s;">0:00</span>
+                        <span>/</span>
+                        <span class="end_time" id="end_time" style="transition-delay: 1s;">3:33</span>
+                    </div>
+                    <div class="volume" style="display: flex; align-items: center; position: relative;">
+                        <i onclick="showhide()" class="fas fa-volume-up" style="margin-left: 20px; cursor: pointer; margin-right: 40px; transition: 1s linear; color: rgb(255, 41, 41);" id="volicon"></i>
+                        <div onmouseleave="showhide()" class="volbar hide" style="align-items: center; transition: 1s linear;">
+                            <input type="range" min="0" max="100" id="volume_bar" value="50 ">
+                            <div class="bar1"></div>
+                            <div class="bar2" id="bar2"></div>
+                            <div class="dot" id="dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="player2">
+                <input type="range" min="0" max="100" id="seek">
+                <div class="bar20"></div>
+                <div class="bar21" id="bar21"></div>
+                <div class="dot22" id="dot22"></div>
+            </div>
+        </div>
+    
+    </header>
+    <!-- <script src="script.js"></script> -->
+    <script src="rain.js"></script>
+
+</body>
+</html>
